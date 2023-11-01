@@ -476,7 +476,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 75%;
-    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+    background-color: #fff;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     display: table;
     overflow: hidden; }
@@ -487,14 +488,23 @@ body {
     width: 66.6666667%;
     display: table-cell;
     vertical-align: middle;
-    background-color: #fff;
     padding: 3rem 5rem; }
   .popup__img {
     display: block;
     width: 100%; }
   .popup__text {
     font-size: 1.2rem;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem;
+    -moz-column-rule: 1px solid #eee;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid #eee;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto; }
 
 .footer {
   background-color: #333;

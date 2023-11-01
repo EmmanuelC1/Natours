@@ -14,8 +14,8 @@
     transform: translate(-50%, -50%);
 
     width: 75%;
-    // background-color: $color-white;
-    box-shadow: 0 2rem 4rem rgba($color-black, 0.4);
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
     border-radius: 3px;
     display: table;
     overflow: hidden;
@@ -30,7 +30,6 @@
     width: 66.6666667%;
     display: table-cell;
     vertical-align: middle;
-    background-color: $color-white;
     padding: 3rem 5rem;
   }
 
@@ -42,5 +41,18 @@
   &__text {
     font-size: 1.2rem;
     margin-bottom: 4rem;
+
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem;
+    -moz-column-rule: 1px solid $color-grey-light-2;
+
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid $color-grey-light-2;
+
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
   }
 }
