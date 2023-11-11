@@ -183,4 +183,50 @@
     font-size: 6rem;
     font-weight: 100;
   }
+
+  /////////////////////////////////////
+  // MEDIA QUERY
+  @include respond(tab-port) {
+    height: auto;
+    border-radius: 3px;
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    &__side {
+      // height is specified twice because parent collapses height when el taken out of natural flow (position: float/absolute)
+      height: auto;
+      position: relative;
+      box-shadow: none;
+
+      &--back {
+        // intially flipped, on hover it rotates back to '0'
+        transform: rotateY(0deg);
+        -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+
+    //.card:hover .card__side--front
+    &:hover &__side--front {
+      transform: rotateY(0deg);
+    }
+
+    &__details {
+      padding: 1rem 3rem;
+    }
+
+    // BACK SIDE STYLING
+    &__cta {
+      position: relative;
+      top: 0%;
+      left: 0%;
+      transform: translate(0);
+      width: 100%;
+      padding: 7rem 4rem 4rem 4rem;
+    }
+
+    &__price-box {
+      margin-bottom: 3rem;
+    }
+  }
 }
