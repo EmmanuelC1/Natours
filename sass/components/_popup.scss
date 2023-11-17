@@ -56,8 +56,15 @@
         width: 100%;
         text-align: center;
       }
+    }
 
-      & a {
+    @include respond(phone) {
+      width: 100%;
+      padding: 1.5rem 3rem 2.5rem;
+
+      & h2,
+      & h3 {
+        width: 100%;
         text-align: center;
       }
     }
@@ -84,6 +91,10 @@
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+
+    @include respond(tab-port) {
+      margin-bottom: 2rem;
+    }
   }
 
   // Open states
@@ -115,10 +126,17 @@
         top: 2rem;
         right: 2rem;
       }
+
       @include respond(tab-port) {
         color: $color-white;
         top: 1.5rem;
         right: 2.5rem;
+      }
+
+      @include respond(phone) {
+        color: $color-white;
+        top: 0.5rem;
+        right: 1.5rem;
       }
 
       &:hover {
