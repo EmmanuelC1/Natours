@@ -25,11 +25,21 @@
     overflow: hidden;
     opacity: 0;
     transition: all 0.4s;
+
+    @include respond(tab-land) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__left {
     width: 33.3333333%;
     display: table-cell;
+
+    @include respond(tab-land) {
+      width: 50%;
+      display: flex;
+    }
   }
 
   &__right {
@@ -37,6 +47,20 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(tab-land) {
+      width: 100%;
+
+      & h2,
+      & h3 {
+        width: 100%;
+        text-align: center;
+      }
+
+      & a {
+        text-align: center;
+      }
+    }
   }
 
   &__img {
@@ -85,10 +109,21 @@
       display: inline-block;
       transition: all 0.2s;
       line-height: 1;
-    }
 
-    &:hover {
-      color: $color-primary;
+      @include respond(tab-land) {
+        color: $color-white;
+        top: 2rem;
+        right: 2rem;
+      }
+      @include respond(tab-port) {
+        color: $color-white;
+        top: 1.5rem;
+        right: 2.5rem;
+      }
+
+      &:hover {
+        color: $color-primary;
+      }
     }
   }
 }
