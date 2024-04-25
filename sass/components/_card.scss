@@ -187,7 +187,10 @@
 
   /////////////////////////////////////
   // MEDIA QUERY
-  @include respond(tab-port) {
+
+  // hover:none - device without a hover (touch device). used to show back of card instead of hide/show with hover
+  // @include respond(tab-port) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     height: auto;
     border-radius: 3px;
     background-color: $color-white;
