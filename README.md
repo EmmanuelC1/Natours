@@ -43,4 +43,4 @@ Natours is a responsive website using Sass and CSS best practices for learning p
 
 © Copyright by [Jonas Schmedtmann](https://twitter.com/jonasschmedtman). Use for learning or your portfolio. Don't use to teach. Don't claim as your own.
 
-Project is from the course [_Advannced CSS and Sass: Flexbox, Grid, Animations and More_](https://www.udemy.com/course/advanced-css-and-sass/) by Jonas Schmedtmann
+Project is from the course [_Advanced CSS and Sass: Flexbox, Grid, Animations and More_](https://www.udemy.com/course/advanced-css-and-sass/) by Jonas Schmedtmann
