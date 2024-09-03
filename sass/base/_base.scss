@@ -9,6 +9,7 @@
 html {
   // defines what 1 rem should be (10px / 16px = 62.5%)
   font-size: 62.5%; // 1rem = 10px
+  scroll-behavior: smooth;
 
   // media query mixin
   // width < 1200
