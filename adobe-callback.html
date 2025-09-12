@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adobe OAuth Callback</title>
+  </head>
+
+  <body>
+    <h1>Adobe OAuth Callback</h1>
+    <p class="code"></p>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const code = params.get('code');
+      document.getElementById('code').textContent = code ? `Authorization code ${code}` : 'No Code Found.';
+      console.log('Authorization code: ', code);
+    </script>
+  </body>
+
+</html>
